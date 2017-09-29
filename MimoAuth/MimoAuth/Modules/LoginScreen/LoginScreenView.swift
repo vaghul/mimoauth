@@ -48,6 +48,9 @@ class LoginScreenView: BaseView {
 		inputemail.placeholder = "Enter your Email-id"
 		inputemail.keyboardType = .emailAddress
 		inputemail.layer.cornerRadius = 5
+		inputemail.returnKeyType = .next
+		inputemail.tag = 0
+		inputemail.delegate = self
 		inputemail.layer.borderColor = UIColor.lightGray.cgColor
 		inputemail.layer.borderWidth = 1
 		
@@ -56,6 +59,9 @@ class LoginScreenView: BaseView {
 		inputpassword.keyboardType = .default
 		inputpassword.isSecureTextEntry = true
 		inputpassword.layer.cornerRadius = 5
+		inputpassword.returnKeyType = .done
+		inputpassword.delegate = self
+		inputpassword.tag = 1
 		inputpassword.layer.borderColor = UIColor.lightGray.cgColor
 		inputpassword.layer.borderWidth = 1
 		
@@ -102,6 +108,12 @@ class LoginScreenView: BaseView {
 	func clearTextFeilds(){
 		inputemail.text = ""
 		inputpassword.text = ""
+	}
+	func showPassword(){
+		inputpassword.becomeFirstResponder()
+	}
+	func resignPassword(){
+		inputpassword.resignFirstResponder()
 	}
 	override func layoutSubviews() {
 		super.layoutSubviews()

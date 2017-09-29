@@ -9,6 +9,17 @@
 
 import UIKit
 
+extension LoginScreenView : UITextFieldDelegate{
+	func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+		if textField.tag == 0{
+			showPassword()
+		}
+		if textField.tag == 1{
+			resignPassword()
+		}
+		return true
+	}
+}
 extension LoginScreenViewController: LoginScreenModelDelegate{
 	
 	func recievedResponce(_ value: [String : AnyObject], method: String) {
