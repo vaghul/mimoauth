@@ -14,7 +14,7 @@ class BaseView: UIView {
 	
 	private var overlayView:UIView!
 	private var myActivityIndicator:UIActivityIndicatorView!
-	
+	let constants = Macros()
 	func onCreate(){
 		
 		
@@ -54,5 +54,4 @@ class BaseView: UIView {
 		let height = UIScreen.main.bounds.height
 		return ((height * ((val * 100) / 667))/100)
 	}
-	
 }

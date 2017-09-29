@@ -24,6 +24,8 @@
 		D9DE8E021F7E17CE00DE4668 /* LoginScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DE8DFE1F7E17CE00DE4668 /* LoginScreenModel.swift */; };
 		D9DE8E031F7E17CE00DE4668 /* LoginScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DE8DFF1F7E17CE00DE4668 /* LoginScreenView.swift */; };
 		D9DE8E041F7E17CE00DE4668 /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DE8E001F7E17CE00DE4668 /* LoginScreenViewController.swift */; };
+		D9DE8E061F7E24A800DE4668 /* Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DE8E051F7E24A800DE4668 /* Macros.swift */; };
+		D9DE8E081F7E2AB200DE4668 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DE8E071F7E2AB200DE4668 /* Storage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		D9DE8DFE1F7E17CE00DE4668 /* LoginScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenModel.swift; sourceTree = "<group>"; };
 		D9DE8DFF1F7E17CE00DE4668 /* LoginScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenView.swift; sourceTree = "<group>"; };
 		D9DE8E001F7E17CE00DE4668 /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
+		D9DE8E051F7E24A800DE4668 /* Macros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Macros.swift; sourceTree = "<group>"; };
+		D9DE8E071F7E2AB200DE4668 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,8 @@
 			isa = PBXGroup;
 			children = (
 				D9DE8DF11F7E171600DE4668 /* ImageCache.swift */,
+				D9DE8E051F7E24A800DE4668 /* Macros.swift */,
+				D9DE8E071F7E2AB200DE4668 /* Storage.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -277,12 +283,14 @@
 				D9DE8DFB1F7E177D00DE4668 /* HomeScreenView.swift in Sources */,
 				D9DE8DEF1F7E167E00DE4668 /* extensions.swift in Sources */,
 				D9DE8DED1F7E162E00DE4668 /* BaseViewController.swift in Sources */,
+				D9DE8E061F7E24A800DE4668 /* Macros.swift in Sources */,
 				D9DE8DEB1F7E162E00DE4668 /* BaseModel.swift in Sources */,
 				D9DE8E021F7E17CE00DE4668 /* LoginScreenModel.swift in Sources */,
 				D9DE8E041F7E17CE00DE4668 /* LoginScreenViewController.swift in Sources */,
 				D9DE8E031F7E17CE00DE4668 /* LoginScreenView.swift in Sources */,
 				D9DE8DC51F7E15CF00DE4668 /* AppDelegate.swift in Sources */,
 				D9DE8DEC1F7E162E00DE4668 /* BaseView.swift in Sources */,
+				D9DE8E081F7E2AB200DE4668 /* Storage.swift in Sources */,
 				D9DE8DFC1F7E177D00DE4668 /* HomeScreenViewController.swift in Sources */,
 				D9DE8E011F7E17CE00DE4668 /* LoginScreen+.swift in Sources */,
 			);

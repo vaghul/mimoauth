@@ -18,7 +18,9 @@ protocol HomeScreenViewDelegate: class {
 class HomeScreenView: BaseView {
 	
 	weak var delegate: HomeScreenViewDelegate?
-	
+	var labelTitle: UILabel!
+	var imageView: UIImageView!
+	var labe 
 	// MARK: -  SuperClass Overrides
 	
 	override init(frame: CGRect) {

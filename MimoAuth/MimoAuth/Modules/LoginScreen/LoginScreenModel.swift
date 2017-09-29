@@ -42,7 +42,16 @@ class LoginScreenModel: BaseModel {
 	
 	// MARK: -  Custom Method
 	
+	func createNewUser(_ email:String,password:String){
+		let param = ["email":email,"password":password]
+		sendPostRequest(constants.SignUpURL, body: param as [String:AnyObject], method: "SignUp")
+	}
 	
+	func LoginUser(_ email:String, password:String) {
+		let param = ["username":email,"password":password,"scope":constants.SCOPE,"grant_type":constants.PASSWORDGRANT]
+		sendPostRequest(constants.LoginURL, body: param as [String:AnyObject], method: "Login")
+
+	}
 	
 }
 

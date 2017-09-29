@@ -13,15 +13,20 @@ import UIKit
 
 class BaseModel: NSObject {
 	
-	func sendPostRequest(_ urlstring:String,body:[String:AnyObject],method:String) 	{
+	let constants = Macros()
+	func sendPostRequest(_ urlstring:String, body:[String:AnyObject],method:String) 	{
+		var body = body
 		UIApplication.shared.isNetworkActivityIndicatorVisible = true
 		var request = URLRequest(url: URL(string: urlstring)!)
 		request.httpMethod = "POST"
-		request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
-		let myData = convertToData(body as NSDictionary)
+		request.setValue("application/json", forHTTPHeaderField: "Accept")
+		request.setValue("application/json", forHTTPHeaderField: "content-type")
+		body["client_id"] = constants.CLIENT_ID as AnyObject
+		body["connection"] = constants.CONNECTION as AnyObject
 		do{
 			if(body.count > 0){
-				request.httpBody = myData as Data
+				let nsdatajson = try JSONSerialization.data(withJSONObject: body, options: JSONSerialization.WritingOptions(rawValue: 0))
+				request.httpBody = nsdatajson
 			}
 			request.timeoutInterval = 60.0
 			let session = URLSession(configuration: URLSessionConfiguration.default)
@@ -35,16 +40,24 @@ class BaseModel: NSObject {
 						let httpresp:HTTPURLResponse = (response as? HTTPURLResponse)!
 						if(httpresp.statusCode==200){
 							do{
-								//								let respdata = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as! NSDictionary
-								
+								let respdata = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as! [String:AnyObject]
+								print(respdata)
+								self.responceRecieved(respdata, method: method)
 							}catch{
 								print("error \(error)")
 								print("Parsing Error");
 								self.errorRecieved("error",method: method)
 							}
 						}else{ // end of statuscode check
-							print("status code failure");
-							self.errorRecieved("statusfailed",method: method)
+							do{
+								print("status code failure");
+								let respdata = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as! [String:AnyObject]
+								self.errorRecieved(respdata.description,method: method)
+							}catch{
+								print("error \(error)")
+								print("Parsing Error");
+								self.errorRecieved("error",method: method)
+							}
 						}
 					}else{ // end of error check
 						self.errorRecieved("requestfailed",method: method)
@@ -55,6 +68,8 @@ class BaseModel: NSObject {
 			}) // end of session
 			
 			task.resume()
+		}catch{
+			
 		}
 	} // end of function
 	
