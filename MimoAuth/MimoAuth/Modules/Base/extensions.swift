@@ -90,3 +90,9 @@ extension String {
 	}
 	
 }
+extension UIImageView {
+
+	func MakeViewCircle(){
+		self.layer.cornerRadius = self.getHeight() / 2
+	}
+}

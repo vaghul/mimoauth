@@ -50,8 +50,6 @@ extension LoginScreenViewController: LoginScreenViewDelegate{
 			}else if tag == 1{
 				model.createNewUser(myView.getEmailValue(), password: myView.getPasswordValue())
 			}
-			Storage.sharedInstance.storeValue(myView.getEmailValue(), key: "email")
-			Storage.sharedInstance.storeValue(myView.getPasswordValue(), key: "pass")
 		}
 	}
 }

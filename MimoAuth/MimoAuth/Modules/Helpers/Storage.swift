@@ -17,6 +17,13 @@ class Storage: NSObject {
 		UserDefaults.standard.synchronize()
 	}
 	func retriveValue(key:String) -> String{
-		return UserDefaults.standard.value(forKey: "key") as! String
+		return UserDefaults.standard.value(forKey: key) as! String
+	}
+	func isValueStored(key:String) -> Bool{
+		return (UserDefaults.standard.value(forKey: key) != nil)
+	}
+	func purgeValues(){
+		let domain = Bundle.main.bundleIdentifier
+		UserDefaults.standard.removePersistentDomain(forName: domain!)
 	}
 }

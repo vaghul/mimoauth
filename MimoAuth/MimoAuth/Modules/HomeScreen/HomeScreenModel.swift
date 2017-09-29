@@ -42,7 +42,10 @@ class HomeScreenModel: BaseModel {
 	
 	// MARK: -  Custom Method
 	
-	
+	func getUserDetails(){
+		let param = ["id_token":Storage.sharedInstance.retriveValue(key: "id_token")]
+		sendPostRequest(constants.UserDetailsURL, body: param as [String:AnyObject], method: "userdetails")
+	}
 	
 }
 

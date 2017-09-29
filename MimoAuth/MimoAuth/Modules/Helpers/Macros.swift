@@ -16,4 +16,5 @@ class Macros: NSObject {
 	let PASSWORDGRANT:String = "password"
 	let SignUpURL:String = "https://mimo-test.auth0.com/dbconnections/signup"
 	let LoginURL:String = "https://mimo-test.auth0.com/oauth/ro"
+	let UserDetailsURL:String = "https://mimo-test.auth0.com/tokeninfo"
 }

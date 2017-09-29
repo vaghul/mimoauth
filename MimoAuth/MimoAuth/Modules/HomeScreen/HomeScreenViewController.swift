@@ -24,6 +24,8 @@ class HomeScreenViewController: BaseViewController {
 		model?.delegate = self
 		myView?.delegate = self
 		
+		myView.showLoader()
+		model.getUserDetails()
 	}
 	
 	override func didReceiveMemoryWarning() {
@@ -33,6 +35,7 @@ class HomeScreenViewController: BaseViewController {
 	
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
+		
 	}
 	
 	override func viewWillDisappear(_ animated: Bool) {

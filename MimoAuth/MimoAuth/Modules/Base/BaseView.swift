@@ -20,7 +20,8 @@ class BaseView: UIView {
 		
 		overlayView = UIView()
 		overlayView.clipsToBounds = true
-		overlayView.layer.zPosition = 1
+		overlayView.backgroundColor = UIColor.lightGray
+		overlayView.alpha = 0.80
 		myActivityIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
 		myActivityIndicator.activityIndicatorViewStyle = .whiteLarge
 		

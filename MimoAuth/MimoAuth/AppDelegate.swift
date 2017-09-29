@@ -18,6 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		// Override point for customization after application launch.
 		self.window = UIWindow(frame: UIScreen.main.bounds)
 		let navigation = UINavigationController(rootViewController: LoginScreenViewController())
+		if Storage.sharedInstance.isValueStored(key: "id_token") {
+			navigation.pushViewController(HomeScreenViewController(), animated: false)
+		}
 		navigation.navigationBar.isHidden = true
 		self.window?.rootViewController = navigation
 		self.window?.makeKeyAndVisible()
