@@ -23,7 +23,6 @@ class LoginScreenViewController: BaseViewController {
 		model = LoginScreenModel()
 		model?.delegate = self
 		myView?.delegate = self
-		
 	}
 	
 	override func didReceiveMemoryWarning() {

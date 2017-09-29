@@ -18,6 +18,8 @@ extension LoginScreenViewController: LoginScreenModelDelegate{
 			Storage.sharedInstance.storeValue(value["id_token"] as! String, key: "id_token")
 			Storage.sharedInstance.storeValue(value["access_token"] as! String, key: "access_token")
 			myView.removeLoader()
+			myView.endEditing(true)
+			myView.clearTextFeilds()
 			self.navigationController?.pushViewController(HomeScreenViewController(), animated: true)
 		}
 	}

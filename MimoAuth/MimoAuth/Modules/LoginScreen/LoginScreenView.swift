@@ -18,11 +18,11 @@ protocol LoginScreenViewDelegate: class {
 class LoginScreenView: BaseView {
 	
 	weak var delegate: LoginScreenViewDelegate?
-	var labelTitle: UILabel!
-	var inputemail:UITextField!
-	var inputpassword:UITextField!
-	var buttonLogin:UIButton!
-	var buttonSignUp:UIButton!
+	private var labelTitle: UILabel!
+	private var inputemail:LeftPaddedTextField!
+	private var inputpassword:LeftPaddedTextField!
+	private var buttonLogin:UIButton!
+	private var buttonSignUp:UIButton!
 	
 	// MARK: -  SuperClass Overrides
 	
@@ -44,21 +44,19 @@ class LoginScreenView: BaseView {
 		labelTitle.setAttributes("Copperplate-Bold", fontSize: 25, textColor: .black, textAlignment: .center)
 		labelTitle.setTextWithSpacing("Login", space: 0.2)
 		
-		inputemail = UITextField()
+		inputemail = LeftPaddedTextField()
 		inputemail.placeholder = "Enter your Email-id"
-		inputemail.text = "test123@gmail.com"
 		inputemail.keyboardType = .emailAddress
 		inputemail.layer.cornerRadius = 5
-		//inputemail.layer.borderColor = .lightGray.CGcolor
+		inputemail.layer.borderColor = UIColor.lightGray.cgColor
 		inputemail.layer.borderWidth = 1
 		
-		inputpassword = UITextField()
+		inputpassword = LeftPaddedTextField()
 		inputpassword.placeholder = "Enter your Password"
 		inputpassword.keyboardType = .default
 		inputpassword.isSecureTextEntry = true
-		inputpassword.text = "test@gmail.com"
 		inputpassword.layer.cornerRadius = 5
-		//inputemail.layer.borderColor = .lightGray.CGcolor
+		inputpassword.layer.borderColor = UIColor.lightGray.cgColor
 		inputpassword.layer.borderWidth = 1
 		
 		buttonLogin = UIButton()
@@ -101,18 +99,22 @@ class LoginScreenView: BaseView {
 		}
 		return password
 	}
+	func clearTextFeilds(){
+		inputemail.text = ""
+		inputpassword.text = ""
+	}
 	override func layoutSubviews() {
 		super.layoutSubviews()
 		
-		labelTitle.frame = CGRect(x: calculatePercentWidth(16), y: calculatePercentHeight(30), width: self.getWidth() - calculatePercentWidth(16 + 16), height: 30)
+		labelTitle.frame = CGRect(x: calculatePercentWidth(16), y: calculatePercentHeight(30), width: self.getWidth() - calculatePercentWidth(16 + 16), height: 35)
 		
-		inputemail.frame = CGRect(x: calculatePercentWidth(16), y: labelTitle.calculateOffSetY() + calculatePercentHeight(20), width: self.getWidth() - calculatePercentWidth(16 + 16), height: 30)
+		inputemail.frame = CGRect(x: calculatePercentWidth(16), y: labelTitle.calculateOffSetY() + calculatePercentHeight(20), width: self.getWidth() - calculatePercentWidth(16 + 16), height: 35)
 		
-		inputpassword.frame = CGRect(x: calculatePercentWidth(16), y: inputemail.calculateOffSetY() + calculatePercentHeight(20), width: self.getWidth() - calculatePercentWidth(16 + 16), height: 30)
+		inputpassword.frame = CGRect(x: calculatePercentWidth(16), y: inputemail.calculateOffSetY() + calculatePercentHeight(20), width: self.getWidth() - calculatePercentWidth(16 + 16), height: 35)
 		
-		buttonLogin.frame = CGRect(x: calculatePercentWidth(16), y: inputpassword.calculateOffSetY() + calculatePercentHeight(15), width: self.getWidth()/2 - calculatePercentWidth(16 + 16), height: 30)
+		buttonLogin.frame = CGRect(x: calculatePercentWidth(16), y: inputpassword.calculateOffSetY() + calculatePercentHeight(15), width: self.getWidth()/2 - calculatePercentWidth(16 + 16), height: 35)
 		
-		buttonSignUp.frame = CGRect(x: buttonLogin.calculateOffSetX() + calculatePercentWidth(16), y: inputpassword.calculateOffSetY() + calculatePercentHeight(15), width: self.getWidth()/2 - calculatePercentWidth(16 + 16), height: 30)
+		buttonSignUp.frame = CGRect(x: buttonLogin.calculateOffSetX() + calculatePercentWidth(16), y: inputpassword.calculateOffSetY() + calculatePercentHeight(15), width: self.getWidth()/2 - calculatePercentWidth(16 + 16), height: 35)
 	}
 	
 }

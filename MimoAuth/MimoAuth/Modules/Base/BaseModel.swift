@@ -41,7 +41,7 @@ class BaseModel: NSObject {
 						if(httpresp.statusCode==200){
 							do{
 								let respdata = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as! [String:AnyObject]
-								print(respdata)
+								//print(respdata)
 								self.responceRecieved(respdata, method: method)
 							}catch{
 								print("error \(error)")
@@ -80,7 +80,6 @@ class BaseModel: NSObject {
 		let param = body.stringFromHttpParameters()
 		var request = URLRequest(url: URL(string: "\(urlstring)?\(param)")!)
 		request.httpMethod = "GET"
-		//		request.setValue("6d9f729b765aae27f45e5ef9150fa073f8a61b94", forHTTPHeaderField: "X-AUTHORIZATION")
 		do{
 			request.timeoutInterval = 60.0
 			let session = URLSession(configuration: URLSessionConfiguration.default)
@@ -93,14 +92,14 @@ class BaseModel: NSObject {
 					if((error == nil)){
 						let httpresp:HTTPURLResponse = (response as? HTTPURLResponse)!
 						if(httpresp.statusCode==200){
-							do{
-								//								let respdata = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as! NSDictionary
-								
-							}catch{
-								print("error \(error)")
-								print("Parsing Error");
-								self.errorRecieved("error",method: method)
-							}
+//							do{
+//								//								let respdata = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as! NSDictionary
+//
+//							}catch{
+//								print("error \(error)")
+//								print("Parsing Error");
+//								self.errorRecieved("error",method: method)
+//							}
 						}else{ // end of status code
 							print("status code failure");
 							self.errorRecieved("statusfailed",method: method)
