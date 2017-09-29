@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D9DE8DC51F7E15CF00DE4668 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DE8DC41F7E15CF00DE4668 /* AppDelegate.swift */; };
+		D9DE8DCC1F7E15CF00DE4668 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9DE8DCB1F7E15CF00DE4668 /* Assets.xcassets */; };
+		D9DE8DCF1F7E15CF00DE4668 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9DE8DCD1F7E15CF00DE4668 /* LaunchScreen.storyboard */; };
+		D9DE8DDA1F7E15CF00DE4668 /* MimoAuthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DE8DD91F7E15CF00DE4668 /* MimoAuthTests.swift */; };
+		D9DE8DEB1F7E162E00DE4668 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DE8DE71F7E162E00DE4668 /* BaseModel.swift */; };
+		D9DE8DEC1F7E162E00DE4668 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DE8DE81F7E162E00DE4668 /* BaseView.swift */; };
+		D9DE8DED1F7E162E00DE4668 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DE8DE91F7E162E00DE4668 /* BaseViewController.swift */; };
+		D9DE8DEF1F7E167E00DE4668 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DE8DEE1F7E167E00DE4668 /* extensions.swift */; };
+		D9DE8DF21F7E171600DE4668 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DE8DF11F7E171600DE4668 /* ImageCache.swift */; };
+		D9DE8DF91F7E177D00DE4668 /* HomeScreen+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DE8DF51F7E177D00DE4668 /* HomeScreen+.swift */; };
+		D9DE8DFA1F7E177D00DE4668 /* HomeScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DE8DF61F7E177D00DE4668 /* HomeScreenModel.swift */; };
+		D9DE8DFB1F7E177D00DE4668 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DE8DF71F7E177D00DE4668 /* HomeScreenView.swift */; };
+		D9DE8DFC1F7E177D00DE4668 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DE8DF81F7E177D00DE4668 /* HomeScreenViewController.swift */; };
+		D9DE8E011F7E17CE00DE4668 /* LoginScreen+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DE8DFD1F7E17CE00DE4668 /* LoginScreen+.swift */; };
+		D9DE8E021F7E17CE00DE4668 /* LoginScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DE8DFE1F7E17CE00DE4668 /* LoginScreenModel.swift */; };
+		D9DE8E031F7E17CE00DE4668 /* LoginScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DE8DFF1F7E17CE00DE4668 /* LoginScreenView.swift */; };
+		D9DE8E041F7E17CE00DE4668 /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DE8E001F7E17CE00DE4668 /* LoginScreenViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9DE8DD61F7E15CF00DE4668 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9DE8DB91F7E15CF00DE4668 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9DE8DC01F7E15CF00DE4668;
+			remoteInfo = MimoAuth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D9DE8DC11F7E15CF00DE4668 /* MimoAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MimoAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DE8DC41F7E15CF00DE4668 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D9DE8DCB1F7E15CF00DE4668 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9DE8DCE1F7E15CF00DE4668 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D9DE8DD01F7E15CF00DE4668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9DE8DD51F7E15CF00DE4668 /* MimoAuthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MimoAuthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DE8DD91F7E15CF00DE4668 /* MimoAuthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimoAuthTests.swift; sourceTree = "<group>"; };
+		D9DE8DDB1F7E15CF00DE4668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9DE8DE71F7E162E00DE4668 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		D9DE8DE81F7E162E00DE4668 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		D9DE8DE91F7E162E00DE4668 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D9DE8DEE1F7E167E00DE4668 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		D9DE8DF11F7E171600DE4668 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		D9DE8DF51F7E177D00DE4668 /* HomeScreen+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeScreen+.swift"; sourceTree = "<group>"; };
+		D9DE8DF61F7E177D00DE4668 /* HomeScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenModel.swift; sourceTree = "<group>"; };
+		D9DE8DF71F7E177D00DE4668 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
+		D9DE8DF81F7E177D00DE4668 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		D9DE8DFD1F7E17CE00DE4668 /* LoginScreen+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginScreen+.swift"; sourceTree = "<group>"; };
+		D9DE8DFE1F7E17CE00DE4668 /* LoginScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenModel.swift; sourceTree = "<group>"; };
+		D9DE8DFF1F7E17CE00DE4668 /* LoginScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenView.swift; sourceTree = "<group>"; };
+		D9DE8E001F7E17CE00DE4668 /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9DE8DBE1F7E15CF00DE4668 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9DE8DD21F7E15CF00DE4668 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D9DE8DB81F7E15CF00DE4668 = {
+			isa = PBXGroup;
+			children = (
+				D9DE8DC31F7E15CF00DE4668 /* MimoAuth */,
+				D9DE8DD81F7E15CF00DE4668 /* MimoAuthTests */,
+				D9DE8DC21F7E15CF00DE4668 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9DE8DC21F7E15CF00DE4668 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9DE8DC11F7E15CF00DE4668 /* MimoAuth.app */,
+				D9DE8DD51F7E15CF00DE4668 /* MimoAuthTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9DE8DC31F7E15CF00DE4668 /* MimoAuth */ = {
+			isa = PBXGroup;
+			children = (
+				D9DE8DE41F7E160700DE4668 /* Modules */,
+				D9DE8DC41F7E15CF00DE4668 /* AppDelegate.swift */,
+				D9DE8DCB1F7E15CF00DE4668 /* Assets.xcassets */,
+				D9DE8DCD1F7E15CF00DE4668 /* LaunchScreen.storyboard */,
+				D9DE8DD01F7E15CF00DE4668 /* Info.plist */,
+			);
+			path = MimoAuth;
+			sourceTree = "<group>";
+		};
+		D9DE8DD81F7E15CF00DE4668 /* MimoAuthTests */ = {
+			isa = PBXGroup;
+			children = (
+				D9DE8DD91F7E15CF00DE4668 /* MimoAuthTests.swift */,
+				D9DE8DDB1F7E15CF00DE4668 /* Info.plist */,
+			);
+			path = MimoAuthTests;
+			sourceTree = "<group>";
+		};
+		D9DE8DE41F7E160700DE4668 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D9DE8DF41F7E174E00DE4668 /* LoginScreen */,
+				D9DE8DF31F7E174100DE4668 /* HomeScreen */,
+				D9DE8DF01F7E170500DE4668 /* Helpers */,
+				D9DE8DE51F7E161100DE4668 /* Base */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D9DE8DE51F7E161100DE4668 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D9DE8DE71F7E162E00DE4668 /* BaseModel.swift */,
+				D9DE8DE81F7E162E00DE4668 /* BaseView.swift */,
+				D9DE8DE91F7E162E00DE4668 /* BaseViewController.swift */,
+				D9DE8DEE1F7E167E00DE4668 /* extensions.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D9DE8DF01F7E170500DE4668 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D9DE8DF11F7E171600DE4668 /* ImageCache.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D9DE8DF31F7E174100DE4668 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				D9DE8DF51F7E177D00DE4668 /* HomeScreen+.swift */,
+				D9DE8DF61F7E177D00DE4668 /* HomeScreenModel.swift */,
+				D9DE8DF71F7E177D00DE4668 /* HomeScreenView.swift */,
+				D9DE8DF81F7E177D00DE4668 /* HomeScreenViewController.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		D9DE8DF41F7E174E00DE4668 /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				D9DE8DFD1F7E17CE00DE4668 /* LoginScreen+.swift */,
+				D9DE8DFE1F7E17CE00DE4668 /* LoginScreenModel.swift */,
+				D9DE8DFF1F7E17CE00DE4668 /* LoginScreenView.swift */,
+				D9DE8E001F7E17CE00DE4668 /* LoginScreenViewController.swift */,
+			);
+			path = LoginScreen;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9DE8DC01F7E15CF00DE4668 /* MimoAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9DE8DDE1F7E15CF00DE4668 /* Build configuration list for PBXNativeTarget "MimoAuth" */;
+			buildPhases = (
+				D9DE8DBD1F7E15CF00DE4668 /* Sources */,
+				D9DE8DBE1F7E15CF00DE4668 /* Frameworks */,
+				D9DE8DBF1F7E15CF00DE4668 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MimoAuth;
+			productName = MimoAuth;
+			productReference = D9DE8DC11F7E15CF00DE4668 /* MimoAuth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D9DE8DD41F7E15CF00DE4668 /* MimoAuthTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9DE8DE11F7E15CF00DE4668 /* Build configuration list for PBXNativeTarget "MimoAuthTests" */;
+			buildPhases = (
+				D9DE8DD11F7E15CF00DE4668 /* Sources */,
+				D9DE8DD21F7E15CF00DE4668 /* Frameworks */,
+				D9DE8DD31F7E15CF00DE4668 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9DE8DD71F7E15CF00DE4668 /* PBXTargetDependency */,
+			);
+			name = MimoAuthTests;
+			productName = MimoAuthTests;
+			productReference = D9DE8DD51F7E15CF00DE4668 /* MimoAuthTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9DE8DB91F7E15CF00DE4668 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = getmimo;
+				TargetAttributes = {
+					D9DE8DC01F7E15CF00DE4668 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Manual;
+					};
+					D9DE8DD41F7E15CF00DE4668 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D9DE8DC01F7E15CF00DE4668;
+					};
+				};
+			};
+			buildConfigurationList = D9DE8DBC1F7E15CF00DE4668 /* Build configuration list for PBXProject "MimoAuth" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9DE8DB81F7E15CF00DE4668;
+			productRefGroup = D9DE8DC21F7E15CF00DE4668 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9DE8DC01F7E15CF00DE4668 /* MimoAuth */,
+				D9DE8DD41F7E15CF00DE4668 /* MimoAuthTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9DE8DBF1F7E15CF00DE4668 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9DE8DCF1F7E15CF00DE4668 /* LaunchScreen.storyboard in Resources */,
+				D9DE8DCC1F7E15CF00DE4668 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9DE8DD31F7E15CF00DE4668 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9DE8DBD1F7E15CF00DE4668 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9DE8DF91F7E177D00DE4668 /* HomeScreen+.swift in Sources */,
+				D9DE8DF21F7E171600DE4668 /* ImageCache.swift in Sources */,
+				D9DE8DFA1F7E177D00DE4668 /* HomeScreenModel.swift in Sources */,
+				D9DE8DFB1F7E177D00DE4668 /* HomeScreenView.swift in Sources */,
+				D9DE8DEF1F7E167E00DE4668 /* extensions.swift in Sources */,
+				D9DE8DED1F7E162E00DE4668 /* BaseViewController.swift in Sources */,
+				D9DE8DEB1F7E162E00DE4668 /* BaseModel.swift in Sources */,
+				D9DE8E021F7E17CE00DE4668 /* LoginScreenModel.swift in Sources */,
+				D9DE8E041F7E17CE00DE4668 /* LoginScreenViewController.swift in Sources */,
+				D9DE8E031F7E17CE00DE4668 /* LoginScreenView.swift in Sources */,
+				D9DE8DC51F7E15CF00DE4668 /* AppDelegate.swift in Sources */,
+				D9DE8DEC1F7E162E00DE4668 /* BaseView.swift in Sources */,
+				D9DE8DFC1F7E177D00DE4668 /* HomeScreenViewController.swift in Sources */,
+				D9DE8E011F7E17CE00DE4668 /* LoginScreen+.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9DE8DD11F7E15CF00DE4668 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9DE8DDA1F7E15CF00DE4668 /* MimoAuthTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D9DE8DD71F7E15CF00DE4668 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9DE8DC01F7E15CF00DE4668 /* MimoAuth */;
+			targetProxy = D9DE8DD61F7E15CF00DE4668 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D9DE8DCD1F7E15CF00DE4668 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9DE8DCE1F7E15CF00DE4668 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D9DE8DDC1F7E15CF00DE4668 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D9DE8DDD1F7E15CF00DE4668 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9DE8DDF1F7E15CF00DE4668 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = MimoAuth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.getmimo.MimoAuth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D9DE8DE01F7E15CF00DE4668 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = MimoAuth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.getmimo.MimoAuth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D9DE8DE21F7E15CF00DE4668 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8S877VHP9Z;
+				INFOPLIST_FILE = MimoAuthTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.getmimo.MimoAuthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MimoAuth.app/MimoAuth";
+			};
+			name = Debug;
+		};
+		D9DE8DE31F7E15CF00DE4668 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8S877VHP9Z;
+				INFOPLIST_FILE = MimoAuthTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.getmimo.MimoAuthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MimoAuth.app/MimoAuth";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9DE8DBC1F7E15CF00DE4668 /* Build configuration list for PBXProject "MimoAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9DE8DDC1F7E15CF00DE4668 /* Debug */,
+				D9DE8DDD1F7E15CF00DE4668 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9DE8DDE1F7E15CF00DE4668 /* Build configuration list for PBXNativeTarget "MimoAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9DE8DDF1F7E15CF00DE4668 /* Debug */,
+				D9DE8DE01F7E15CF00DE4668 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9DE8DE11F7E15CF00DE4668 /* Build configuration list for PBXNativeTarget "MimoAuthTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9DE8DE21F7E15CF00DE4668 /* Debug */,
+				D9DE8DE31F7E15CF00DE4668 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9DE8DB91F7E15CF00DE4668 /* Project object */;
+}
